@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios'
 import './App.css';
-
+import Iframe from 'react-iframe'
 
 
 import Header from './Header'
@@ -33,25 +33,13 @@ class App extends Component{
   // to work properly, using a promise.
   handleSubmit = (e) => {
 
-    e.preventDefault()
+    e.preventDefault();
 
-    let baseUrl = `https://spoopy-notes.onrender.com/home/${this.state.text}`
+    let baseUrl = `https://spoopy-notes.onrender.com?query=${this.state.text}`;
 
-    axios.get(baseUrl)
-      .then( res => {
-        console.log(res)
-        this.setState({ 
-          // imgUrl: res.imageUrl
-        })
-        console.log('GET Request completed successfully')
-      })
-      .catch( err => {
-        console.log('Axios Get Request Error:', err)
-      })
-
-    // this.setState({
-    //   imgUrl: 'potatoLand'
-    // })
+    this.setState({
+      imgLink:baseUrl
+    })
   }
 
 
@@ -64,8 +52,7 @@ class App extends Component{
             Instructions
         */}
         <Header />
-
-
+ 
         {/* Textbox */}
 
         {/* Submit Button */}
@@ -74,6 +61,11 @@ class App extends Component{
         <InputForm 
           onTextChange={this.handleTextChange}
           onSubmit={this.handleSubmit}
+        />
+        <Iframe 
+          url={this.state.imgLink}
+          width='100%'
+          height='700px'
         />
       </div>
     )
