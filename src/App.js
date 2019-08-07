@@ -41,7 +41,9 @@ class App extends Component{
     let t = new Date()
     let d = t.getTime() 
 
-    let baseUrl = `https://spoopy-notes.onrender.com?query=${this.state.text}&t=${d}`;
+    let uri = encodeURIComponent(this.state.text)
+
+    let baseUrl = `https://spoopy-notes.onrender.com?query=${uri}&t=${d}`;
 
     this.setState({
       imgLink:baseUrl
