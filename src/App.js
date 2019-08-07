@@ -20,6 +20,8 @@ class App extends Component{
 
     this.handleTextChange = this.handleTextChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDadJoke = this.handleDadJoke.bind(this);
+    this.onEnterPress = this.onEnterPress.bind(this);
   }
 
   //Manages the state of the textbox where user will input the string they want to translate 
@@ -50,15 +52,32 @@ class App extends Component{
     })
   }
 
+  handleDadJoke = (e) => {
+
+    e.preventDefault();
+
+    this.setState({
+      imgLink: `https://spoopy-notes.onrender.com/dadgiggles`
+    })
+
+  }
+
+  onEnterPress = (e) => {
+    if(e.keyCode == 13 && e.shiftKey == false) {
+      e.preventDefault();
+      
+      this.handleSubmit(e)
+    }
+  }
 
   render(){
     let image;
     if (this.state.imgLink) {
       image = <img 
-      style={{maxHeight:'100%', maxWidth:'100%'}}
-      src={this.state.imgLink}
-      alt={this.state.text}
-    />
+        style={{maxHeight:'100%', maxWidth:'100%'}}
+        src={this.state.imgLink}
+        alt={this.state.text}
+      />
     }
 
 
@@ -66,19 +85,21 @@ class App extends Component{
     return(
       <Container>
 
-        <Row style={{margin:'50px 0 0 0'}}>
+        <Row style={{margin:'50px 0 50px 0'}}>
           <Col sm={6}>
           <Header /> 
 
         {/* Textbox */}
         {/* Submit Button */}
 
-          <InputForm 
+        <InputForm 
           onTextChange={this.handleTextChange}
           onSubmit={this.handleSubmit}
+          onDadJokeClick={this.handleDadJoke}
+          onEnterPress={this.onEnterPress}
         />
           </Col>
-          <Col sm={6} style={{maxWidth: '50%'}}>
+          <Col sm={6}>
             {image}
           </Col>
         </Row>
