@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 
 import './App.css';
-import Iframe from 'react-iframe'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 import Header from './Header'
 import InputForm from './InputForm'
@@ -46,28 +48,37 @@ class App extends Component{
 
 
   render(){
+    let image;
+    if (this.state.imgLink) {
+      image = <img 
+      style={{maxHeight:'100%', maxWidth:'100%'}}
+      src={this.state.imgLink}
+      alt={this.state.text}
+    />
+    }
+
+
+
     return(
-      <div className="App">
+      <Container>
 
-        {/*HEADER 
-            Logo 
-            Instructions
-        */}
-        <Header />
- 
+        <Row style={{margin:'50px 0 0 0'}}>
+          <Col sm={6}>
+          <Header /> 
+
         {/* Textbox */}
-
         {/* Submit Button */}
 
-        {/* Image Display */}
-        <InputForm 
+          <InputForm 
           onTextChange={this.handleTextChange}
           onSubmit={this.handleSubmit}
         />
-        <img
-          src={this.state.imgLink}
-        />
-      </div>
+          </Col>
+          <Col sm={6} style={{maxWidth: '50%'}}>
+            {image}
+          </Col>
+        </Row>
+      </Container>
     )
   }
 
