@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-import axios from 'axios'
+
 import './App.css';
 import Iframe from 'react-iframe'
-
 
 import Header from './Header'
 import InputForm from './InputForm'
@@ -35,7 +34,10 @@ class App extends Component{
 
     e.preventDefault();
 
-    let baseUrl = `https://spoopy-notes.onrender.com?query=${this.state.text}`;
+    let t = new Date()
+    let d = t.getTime() 
+
+    let baseUrl = `https://spoopy-notes.onrender.com?query=${this.state.text}&t=${d}`;
 
     this.setState({
       imgLink:baseUrl
@@ -62,10 +64,8 @@ class App extends Component{
           onTextChange={this.handleTextChange}
           onSubmit={this.handleSubmit}
         />
-        <Iframe 
-          url={this.state.imgLink}
-          width='100%'
-          height='700px'
+        <img
+          src={this.state.imgLink}
         />
       </div>
     )
