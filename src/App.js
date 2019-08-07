@@ -7,6 +7,8 @@ import Col from 'react-bootstrap/Col'
 
 import Header from './Header'
 import InputForm from './InputForm'
+import AboutUs from './About'
+
 
 class App extends Component{
   constructor(props){
@@ -78,6 +80,7 @@ class App extends Component{
             {image}
           </Col>
         </Row>
+        <AboutUs />
       </Container>
     )
   }
