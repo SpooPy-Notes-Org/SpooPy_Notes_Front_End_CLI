@@ -15,7 +15,7 @@ function Header(){
 
   return(
     <Fragment>
-      <h1 style={styles.title}>
+      <h1 style={styles.title} className='glitch' value='SpooPy Notes'>
         SpooPy Notes
       </h1>
       <p>
