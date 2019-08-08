@@ -5,13 +5,9 @@ import FormControl from 'react-bootstrap/FormControl'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
-
-
 class InputForm extends React.Component{
 
-
   render(){
-
     let styles = {
       textbox: {
         height: '200px',

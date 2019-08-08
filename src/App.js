@@ -58,10 +58,8 @@ class App extends Component{
     let t = new Date()
     let d = t.getTime() 
 
-
-
     this.setState({
-      imgLink: `https://spoopy-notes.onrender.com/dadgiggles?t=${d}`
+      imgLink: `https://spoopy-notes.onrender.com/dadjoke?t=${d}`
     })
 
   }
@@ -85,7 +83,7 @@ class App extends Component{
     }
 
     return(
-      <Container>
+      <Container style={{maxHeight: '100vh'}}>
 
         <Row style={{margin:'75px 0 50px 0'}}>
           <Col sm={6}>
