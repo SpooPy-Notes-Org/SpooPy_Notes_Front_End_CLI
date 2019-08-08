@@ -2,7 +2,7 @@
 
 
 .glitch:hover{
-  color: red;
+  color: #de0000;  
 }
 
 @keyframes glitch-anim{
@@ -14,7 +14,7 @@
   }
 }
 
-.glitch:after{
+.glitch::after{
   content:attr(value);
   position:absolute;
   left:2px;
@@ -36,14 +36,18 @@
   }
 }
 
-.glitch:before{
+.glitch::before{
   content:attr(value);
   position:absolute;
   left:2px;
-  text-shadow:1px 0 blue; 
+  text-shadow:1px 0 #03d5ff;
   top:0;
   color:#f0f0f0;
   overflow:hidden;
   clip:rect(0,900px,0,0); 
   animation:glitch-anim-2 3s infinite linear alternate-reverse;
+}
+
+.glitch{
+  position: relative;
 }
