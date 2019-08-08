@@ -2,7 +2,7 @@
 
 
 .glitch:hover{
-  color: red;  
+  color: #de0000;  
 }
 
 @keyframes glitch-anim{
@@ -40,7 +40,7 @@
   content:attr(value);
   position:absolute;
   left:2px;
-  text-shadow:1px 0 blue; 
+  text-shadow:1px 0 #03d5ff;
   top:0;
   color:#f0f0f0;
   overflow:hidden;
