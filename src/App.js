@@ -14,8 +14,6 @@ import About from './About'
 import InputForm from './InputForm'
 import AboutUs from './About'
 
-
-
 //Combining the router with this app to control end points 
 class App extends Component{
   

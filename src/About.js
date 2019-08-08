@@ -4,7 +4,9 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 import joshPicture from './profile_images/josh_face.jpg'
-
+import skylerPicture from './profile_images/skyler_face.jpg'
+import tammyPicture from './profile_images/tammy_face.png'
+import aliyahPicture from './profile_images/aliyah_face.png'
 
 import Profile from './Profile'
 
@@ -13,48 +15,36 @@ class AboutUs extends Component{
     render(){
         return(
             <>
-            <Row>
+            <Row style={{marginBottom:"20px"}}>
                 <Profile 
-                    img={joshPicture}
-                    name="Joshua Ho"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Integer est nulla, elementum et tellus vitae, vehicula fringilla lectus. 
-                    Donec eu nisl sagittis, commodo sem in, porta mi. Aliquam tempus nisi justo, 
-                    nec iaculis lectus posuere ut."
-                    github="https://github.com/ricecreamdude"
-                    linkedIn="https://www.linkedin.com/in/joshua-ho-80b6a251/"
+                    img={tammyPicture}
+                    name="Tammy Do"
+                    description="SpooPy inspiration: Nancy Drew mysteries and My Favorite Murder podcast."
+                    github="https://github.com/tammytdo"
+                    linkedIn="https://www.linkedin.com/in/tammytdo/"
                 />
                 <Profile 
-                    img={joshPicture}
+                    img={aliyahPicture}
                     name="Aliya Summers"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Integer est nulla, elementum et tellus vitae, vehicula fringilla lectus. 
-                    Donec eu nisl sagittis, commodo sem in, porta mi. Aliquam tempus nisi justo, 
-                    nec iaculis lectus posuere ut."
+                    description="Enjoys weird art projects, books, photography, and Python."
                     github="https://github.com/arsummers"
                     linkedIn="https://www.linkedin.com/in/aliya-summers/"
                 />
             </Row>
             <Row>
                 <Profile 
-                    img={joshPicture}
+                    img={skylerPicture}
                     name="Skyler Burger"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Integer est nulla, elementum et tellus vitae, vehicula fringilla lectus. 
-                    Donec eu nisl sagittis, commodo sem in, porta mi. Aliquam tempus nisi justo, 
-                    nec iaculis lectus posuere ut."
+                    description="SpooPy Notes will save him time and money on crafting supplies."
                     github="https://github.com/SkylerBurger"
                     linkedIn="https://www.linkedin.com/in/skylerburger/"
                 />
                 <Profile 
                     img={joshPicture}
-                    name="Tammy Do"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Integer est nulla, elementum et tellus vitae, vehicula fringilla lectus. 
-                    Donec eu nisl sagittis, commodo sem in, porta mi. Aliquam tempus nisi justo, 
-                    nec iaculis lectus posuere ut."
-                    github="https://github.com/tammytdo"
-                    linkedIn="https://www.linkedin.com/in/tammytdo/"
+                    name="Joshua Ho"
+                    description="He spends his time drinking hot water, sitting in traffic, and wearing slip on shoes."
+                    github="https://github.com/ricecreamdude"
+                    linkedIn="https://www.linkedin.com/in/joshua-ho-80b6a251/"
                 />
             </Row>
             </>
