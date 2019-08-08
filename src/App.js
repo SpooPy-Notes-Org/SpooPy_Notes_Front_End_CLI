@@ -80,12 +80,10 @@ class App extends Component{
       />
     }
 
-
-
     return(
       <Container>
 
-        <Row style={{margin:'50px 0 50px 0'}}>
+        <Row style={{margin:'75px 0 50px 0'}}>
           <Col sm={6}>
           <Header /> 
 
@@ -103,7 +101,7 @@ class App extends Component{
             {image}
           </Col>
         </Row>
-        <AboutUs />
+        {/* <AboutUs /> */}
       </Container>
     )
   }
