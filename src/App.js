@@ -55,9 +55,13 @@ class App extends Component{
   handleDadJoke = (e) => {
 
     e.preventDefault();
+    let t = new Date()
+    let d = t.getTime() 
+
+
 
     this.setState({
-      imgLink: `https://spoopy-notes.onrender.com/dadgiggles`
+      imgLink: `https://spoopy-notes.onrender.com/dadgiggles?t=${d}`
     })
 
   }
