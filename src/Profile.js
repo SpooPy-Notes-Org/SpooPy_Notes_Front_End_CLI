@@ -13,14 +13,15 @@ class Profile extends Component{
             },
             name: {
                 fontSize: "32px",
-                marginBottom: '0px',
+                marginBottom: '20px',
             },
             para:{
                 fontSize: "16px",
-                fontWeight: 'bold'
+                fontWeight: 'bold',
+                height: '72px'
             },
             socialIcon:{
-                fontSize: "2.0em",
+                fontSize: "1.9em",
                 marginRight: '10px'
             }
         }
@@ -31,27 +32,28 @@ class Profile extends Component{
                     <Row>
                         <img 
                             style={styles.image}
-                            src={this.props.img} />        
-                    </Row>
-                    <Row>   
-
+                            src={this.props.img} 
+                        />        
                     </Row>
                  </Col>
-                <Col md={4}>
+                <Col md={4} className='socialIconDiv'>  
                     <h3 style={styles.name}>{this.props.name}</h3>
+                    <p style={styles.para}>{this.props.description}</p>
                     <a href={this.props.github}  
                         id="icon-github" 
                         style={styles.socialIcon}
-                        target="_blank">
-                            <i class="fab fa-github"></i>
+                        target="_blank"
+                        >
+                        <i class="fab fa-github"></i>
                     </a>
                     <a href={this.props.linkedIn}
                         id="icon-linkedin" 
                         style={styles.socialIcon}
-                        target="_blank">
-                            <i class="fab fa-linkedin"></i>
+                        target="_blank"
+                        >
+                        <i class="fab fa-linkedin"></i>
                     </a>
-                    <p style={styles.para}>{this.props.description}</p>
+
                 </Col>    
             </Fragment>         
         )

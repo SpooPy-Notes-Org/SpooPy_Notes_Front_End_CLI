@@ -1,8 +1,11 @@
 // glitch affected adapted from: https://codepen.io/lbebber/pen/ypgql and https://css-tricks.com/glitch-effect-text-images-svg/
 
 
+
+
 .glitch:hover{
   color: #de0000;  
+  transition: 0.4s color;
 }
 
 @keyframes glitch-anim{
@@ -50,4 +53,5 @@
 
 .glitch{
   position: relative;
+  transition: 0.4s color;
 }

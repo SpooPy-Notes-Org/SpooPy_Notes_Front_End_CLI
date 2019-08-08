@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 
 import joshPicture from './profile_images/josh_face.jpg'
 import skylerPicture from './profile_images/skyler_face.jpg'
@@ -10,12 +8,11 @@ import aliyahPicture from './profile_images/aliyah_face.png'
 
 import Profile from './Profile'
 
-
 class AboutUs extends Component{
     render(){
         return(
             <>
-            <Row style={{marginBottom:"20px"}}>
+            <Row style={{marginBottom:"40px"}}>
                 <Profile 
                     img={tammyPicture}
                     name="Tammy Do"

@@ -16,18 +16,12 @@ function Header(){
   return(
     <Fragment>
       
-      <h1 className='glitch' value='SpooPy Notes'>
+      <h1 className='glitch' value='SpooPy Notes' style={{marginTop:'50px'}}>
         SpooPy Notes
       </h1>
-
-      <p>
-        <Link to="/">Home </Link>
-        <Link to="/about">About</Link>  
-      </p>
-
-      <p style={styles.para}>
-        Welcome to SpooPy Notes! Please enter your ransom note into the textbox below and we will create a special, 
-        SpooPy image for you.
+      <p style={{marginBottom: '60px'}}>
+        <Link className='glitch' value='Home' to="/">Home </Link> 
+        <Link className='glitch' value='About' to="/about">About</Link>  
       </p>
     </Fragment>
    )
