@@ -1,12 +1,12 @@
 
 h1{
     font-family: 'Special Elite', cursive;
-    font-size: 400%;
+    font-size: 350%;
 }
 
 p{
     font-family: 'Cutive Mono', monospace;
-    font-size: 150%;
+    font-size: 120%;
 }
 
 h3{
@@ -17,7 +17,15 @@ button{
     font-family: 'Cutive Mono', monospace;
 }
 
-*{
-    background-color: #262626;
+* {
+    /* background-color: #262626; */
     color: #f0f0f0
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background-image: url('./profile_images/five-nights.png')
 }
