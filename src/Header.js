@@ -26,8 +26,7 @@ function Header(){
       </p>
 
       <p style={styles.para}>
-        Welcome to SpooPy Notes! Please enter your ransom note into the textbox below and we will create a special, 
-        SpooPy image for you.
+        Welcome to SpooPy Notes! Enter your ransom note into the textbox.
       </p>
     </Fragment>
    )
