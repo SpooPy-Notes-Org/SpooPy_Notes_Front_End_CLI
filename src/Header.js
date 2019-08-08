@@ -4,15 +4,12 @@ import React,{Fragment} from 'react'
 function Header(){
 
   let styles = {
-
     title: {
       marginBottom: '50px'
     },
-
     para: {
       marginBottom: '50px'
     },
-
   }
 
   return(
