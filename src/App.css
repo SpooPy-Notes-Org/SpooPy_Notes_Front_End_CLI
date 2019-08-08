@@ -9,7 +9,7 @@ h1{
 
 p{
     font-family: 'Cutive Mono', monospace;
-    font-size: 120%;
+    font-size: 150%;
 }
 
 h3{
@@ -42,12 +42,10 @@ a {
 
 }
 
-/* .fa-github:before:hover{
-    color: red;
-    transition: color 0.2s;
-
-} */
-
+a {
+    color: #8aaefc;
+    font-size: 120%;
+}
 a:hover {
     text-decoration: none;
 }
