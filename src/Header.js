@@ -22,7 +22,7 @@ function Header(){
         SpooPy Notes
       </h1>
       <p style={styles.para}>
-        Welcome to SpooPy Notes! Please enter your ransom note into the textbox bellow and we will create a special, 
+        Welcome to SpooPy Notes! Please enter your ransom note into the textbox below and we will create a special, 
         SpooPy image for you.
       </p>
     </Fragment>
