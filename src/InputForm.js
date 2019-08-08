@@ -14,7 +14,7 @@ class InputForm extends React.Component{
 
     let styles = {
       textbox: {
-        height: '300px',
+        height: '200px',
         marginBottom: '20px'
       },
       button: {
@@ -34,7 +34,7 @@ class InputForm extends React.Component{
           />
         </InputGroup>
         <Button 
-          variant="primary" 
+          variant="danger" 
           type="submit" 
           onClick={this.props.onSubmit}  
           style={styles.button}
@@ -42,7 +42,7 @@ class InputForm extends React.Component{
           Submit
         </Button>
         <Button
-          variant="primary"
+          variant="dark"
           type="submit"
           onClick={this.props.onDadJokeClick}
           style={styles.button}
