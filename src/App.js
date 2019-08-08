@@ -9,6 +9,8 @@ import Col from 'react-bootstrap/Col'
 
 import Home from './Home'
 import Header from './Header'
+import About from './About'
+
 import InputForm from './InputForm'
 import AboutUs from './About'
 
@@ -23,21 +25,13 @@ class App extends Component{
         <Container>
           <Header />  
           <Route exact path="/" component={Home} />
-          <Route path="/about" component={Potato} />  
+          <Route path="/about" component={About} />  
         </Container>        
       </Router>
       
     )
   }
 
-}
-
-
-function Potato(){
-  return(
-    <h2>POTATO!</h2>
-
-  )
 }
 
 export default App;

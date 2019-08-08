@@ -1,28 +1,40 @@
-import React, {Fragment} from 'react';
+import React, {Component, Fragment} from 'react';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import josh_face from '../src/profile_images/josh_face.jpg'
 
-function Profile(){
-    return(
-        <Fragment>
+class Profile extends Component{
 
-            <Col md={3}>
-                <img src={josh_face}></img>        
-            </Col>
 
-            <Col md={3}>
-                <h3>Josh</h3>
-                
-                <p>about josh put some more words here</p>
-            </Col>    
-     
-        </Fragment>
-  
-           
-    )
+    render(){
 
+        let styles = {
+            image:{
+                maxWidth: "100%"
+            },
+            name: {
+                fontSize: "32px",
+            },
+            para:{
+                fontSize: "14px",
+            }
+        }
+
+        return(
+            <Fragment>
+                <Col md={2}>
+                    <img 
+                    style={styles.image}
+                    src={this.props.img}></img>        
+                </Col>
+                <Col md={4}>
+                    <h3 style={styles.name}>{this.props.name}</h3>
+                    <p style={styles.para}>{this.props.description}</p>
+                </Col>    
+            </Fragment>         
+        )
+    }
 }
 
 
