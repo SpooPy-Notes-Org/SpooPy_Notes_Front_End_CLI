@@ -27,5 +27,6 @@ a:hover {
 }
 
 body {
-    background-image: url('./profile_images/five-nights.png')
+    background-image: url('./profile_images/five-nights.png');
+    background-attachment: fixed;
 }
