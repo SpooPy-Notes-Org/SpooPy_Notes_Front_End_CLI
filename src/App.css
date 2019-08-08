@@ -17,7 +17,15 @@ button{
     font-family: 'Cutive Mono', monospace;
 }
 
-*{
-    background-color: #262626;
+* {
+    /* background-color: #262626; */
     color: #f0f0f0
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background-image: url('./profile_images/five-nights.png')
 }
