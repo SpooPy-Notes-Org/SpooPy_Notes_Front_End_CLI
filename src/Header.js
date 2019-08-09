@@ -20,8 +20,8 @@ function Header(){
         SpooPy Notes
       </h1>
       <p style={{marginBottom: '60px'}}>
-        <Link className='glitch' value='Home' to="/">Home </Link> 
-        <Link className='glitch' value='About' to="/about">About</Link>  
+        <Link className="socialIconDiv" value='Home' to="/">Home </Link> 
+        <Link value='About' to="/about">About</Link>  
       </p>
     </Fragment>
    )

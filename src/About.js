@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import Row from 'react-bootstrap/Row'
 
-import joshPicture from './profile_images/josh_face.jpg'
-import skylerPicture from './profile_images/skyler_face.jpg'
+import joshPicture from './profile_images/josh_face.png'
+import skylerPicture from './profile_images/skyler_face.png'
 import tammyPicture from './profile_images/tammy_face.png'
-import aliyahPicture from './profile_images/aliyah_face.png'
+import aliyaPicture from './profile_images/aliya_face.png'
 
 import Profile from './Profile'
 
@@ -21,7 +21,7 @@ class AboutUs extends Component{
                     linkedIn="https://www.linkedin.com/in/tammytdo/"
                 />
                 <Profile 
-                    img={aliyahPicture}
+                    img={aliyaPicture}
                     name="Aliya Summers"
                     description="Enjoys weird art projects, books, photography, and Python."
                     github="https://github.com/arsummers"

@@ -20,34 +20,29 @@ button{
     font-family: 'Cutive Mono', monospace;
 }
 
-
-a {
-    color: #f0f0f0;
-    font-weight: bold;
-}
-
 .socialIconDiv a i:hover{
     color: red;
-
 }
 
 .socialIconDiv a:hover{
     color: red;
-
 }
 
 .socialIconDiv a i{
     color: inherit;
     transition: color 0.2s;
-
 }
 
 a {
     color: #8aaefc;
-    font-size: 120%;
+    font: size 100%;
+    font-weight: bold;
+    transition: color 0.2s;
 }
 a:hover {
+    color: red;
     text-decoration: none;
+    transition: color 0.2s;
 }
 
 body {
