@@ -49,3 +49,27 @@ body {
     background-image: url('./profile_images/five-nights.png');
     background-attachment: fixed;
 }
+
+@media screen and (max-width: 767px){
+
+    * {
+        text-align: center;
+    }
+
+    .socialIconDiv {
+        margin: 0px auto;
+        text-align: center;
+
+    }
+
+    .socialIconDiv i{
+        font-size: 150%;
+    }
+
+    .about-image{
+        width: 70%;
+        margin: 0 15% 10% 15%;
+        margin-top: 50px;
+    }
+
+}

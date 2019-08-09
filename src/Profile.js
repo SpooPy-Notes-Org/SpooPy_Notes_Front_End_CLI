@@ -28,14 +28,15 @@ class Profile extends Component{
 
         return(
             <Fragment>
-                <Col md={2}>
+                <Col md={2} >
                     <Row>
                         <img 
                             style={styles.image}
-                            src={this.props.img} 
+                            src={this.props.img}
+                            className='about-image'
                         />        
                     </Row>
-                 </Col>
+                </Col>
                 <Col md={4} className='socialIconDiv'>  
                     <h3 style={styles.name}>{this.props.name}</h3>
                     <p style={styles.para}>{this.props.description}</p>
