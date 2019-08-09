@@ -20,6 +20,10 @@ button{
     font-family: 'Cutive Mono', monospace;
 }
 
+option {
+    color: black;
+}
+
 .socialIconDiv a i:hover{
     color: red;
 }

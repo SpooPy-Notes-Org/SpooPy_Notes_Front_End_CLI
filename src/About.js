@@ -23,7 +23,7 @@ class AboutUs extends Component{
                 <Profile 
                     img={aliyaPicture}
                     name="Aliya Summers"
-                    description="Enjoys weird art projects, books, photography, and Python."
+                    description="They enjoy weird art projects, books, photography, and Python."
                     github="https://github.com/arsummers"
                     linkedIn="https://www.linkedin.com/in/aliya-summers/"
                 />
