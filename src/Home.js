@@ -16,13 +16,15 @@ class Home extends Component{
     super(props);
     this.state = {
       text: '',
-      imgLink: ''
+      imgLink: '',
+      width: 900
     }
 
     this.handleTextChange = this.handleTextChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDadJoke = this.handleDadJoke.bind(this);
     this.onEnterPress = this.onEnterPress.bind(this);
+    this.onSelectHandler = this.onSelectHandler.bind(this);
   }
 
   //Manages the state of the textbox where user will input the string they want to translate 
@@ -46,7 +48,7 @@ class Home extends Component{
 
     let uri = encodeURIComponent(this.state.text)
 
-    let baseUrl = `https://spoopy-notes.onrender.com?query=${uri}&t=${d}`;
+    let baseUrl = `https://spoopy-notes.onrender.com?query=${uri}&t=${d}&width=${this.state.width}`;
 
     this.setState({
       imgLink:baseUrl
@@ -73,6 +75,11 @@ class Home extends Component{
     }
   }
 
+  onSelectHandler = (e) => {
+    this.setState({width: e.target.value})
+    console.log(e.target.value)
+  }
+
   render(){
     let image;
     if (this.state.imgLink) {
@@ -95,6 +102,7 @@ class Home extends Component{
               onSubmit={this.handleSubmit}
               onDadJokeClick={this.handleDadJoke}
               onEnterPress={this.onEnterPress}
+              onSelectHandler={this.onSelectHandler}
             />
           </Col>
           <Col sm={6}>
