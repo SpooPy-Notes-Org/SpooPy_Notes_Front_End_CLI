@@ -62,7 +62,7 @@ class Home extends Component{
     let d = t.getTime() 
 
     this.setState({
-      imgLink: `https://spoopy-notes.onrender.com/dadjoke?t=${d}`
+      imgLink: `https://spoopy-notes.onrender.com/dadjoke?t=${d}&width=${this.state.width}`
     })
 
   }
