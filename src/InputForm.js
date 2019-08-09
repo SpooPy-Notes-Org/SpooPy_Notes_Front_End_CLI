@@ -5,6 +5,8 @@ import FormControl from 'react-bootstrap/FormControl'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
+import DropDown from './dropdown'
+
 class InputForm extends React.Component{
 
   render(){
@@ -29,6 +31,7 @@ class InputForm extends React.Component{
             onKeyDown={this.props.onEnterPress}
           />
         </InputGroup>
+        <DropDown onSelectHandler={this.props.onSelectHandler}/>
         <Button 
           variant="danger" 
           type="submit" 
