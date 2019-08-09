@@ -86,8 +86,7 @@ class Home extends Component{
     return(
       <Fragment>
         <p style={{marginBottom:'50px'}}>
-          Welcome to SpooPy Notes! Please enter your ransom note into the textbox below and we will create a special, 
-          SpooPy image for you.
+          Welcome to SpooPy Notes! Enter your message to get a special ransom note.
         </p>
         <Row style={{margin:'75px 0 50px 0'}}>
           <Col sm={6}>
